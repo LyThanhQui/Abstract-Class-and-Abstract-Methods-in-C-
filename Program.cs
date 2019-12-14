@@ -46,6 +46,47 @@ namespace AbstractClassAndAbstractMethod
 
     }
     //calculate the electricity bills for commercial and domestic plans
+    /* public abstract class Plan
+     {
+         protected double rate;
+         public abstract void getRate();
+         public void calculation(int units)
+         {
+             Console.Write("BILL AMOUNT FOR " + units + " UNITS is: Rs.");
+             Console.WriteLine(rate * units);
+         }
+     }
+     class CommercialPlan : Plan
+     {
+         public override void getRate()
+         {
+             rate = 5.00;
+         }
+     }
+     class DomesticlPlan : Plan
+     {
+         public override void getRate()
+         {
+             rate = 2.50;
+         }
+     }
+     class Program1
+     {
+         static void Main(string[] args)
+         {
+             Plan p;
+             Console.WriteLine("COMMERCIAL CONNECTION");
+             p = new CommercialPlan();
+             p.getRate();
+             p.calculation(250);
+             Console.WriteLine("DOMESTIC CONNECTION");
+             p = new DomesticlPlan();
+             p.getRate();
+             p.calculation(150);
+             Console.ReadKey();
+         }
+     }*/
+    //Program to show the use of abstract methods.
     public abstract class Plan
     {
         protected double rate;
@@ -70,7 +111,7 @@ namespace AbstractClassAndAbstractMethod
             rate = 2.50;
         }
     }
-    class Program
+    class Program1
     {
         static void Main(string[] args)
         {
@@ -86,5 +127,6 @@ namespace AbstractClassAndAbstractMethod
             Console.ReadKey();
         }
     }
+
 
 }
